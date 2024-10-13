@@ -1,0 +1,126 @@
+<!--PROJET CRÉATEUR DE CV (AUSSI, LETTRE DE MOTIVATION)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cv.css">
+    <title>CV_Projet</title>
+</head>
+<body>
+    <h1 style="color: #fff; font-size: 40px;">Créateur de CV numérique</h1>
+        <main class="grid-contenu">
+<!-------------------------IDENTITÉ---------------------------->
+
+            <section class="identiteItem" id="identite">
+                <div class="ligneIdentite">
+                    <div id="imgIdentite">
+                        <img id="photoProfil" src="./Cooler_Artwork.jpg" alt="Cooler">
+                        <input placeholder="photo_de_profil" type="file" id="inserPhoto" accept="image/*" required>
+                    </div>
+                    <div id="presentation">
+                        <input type="text" placeholder="nom, prenom" required>
+                        <input type="text" placeholder="poste" required>
+    
+                        <div id="description">
+                            <textarea name="" id="" onkeyup="MaxTextarea(this, 283)" placeholder="Description" class="zoneDescription"></textarea>
+                           
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+        </section>
+<!--------------------------CONTACT---------------------------->
+
+            <section class="contactItem" id="contact">
+                <div class="ligneContact">
+                    <input type="email" placeholder="email" required> 
+                    <input type="text" id="adresse" placeholder="adresse" required> 
+                    <input type="phone-number" placeholder="téléphone" required>
+                </div>
+
+        </section>
+<!--------------------EXPERIENCE (PRO + EDUCATION)--------------->
+
+            <section class="experiencesItem" id="experiences">
+                
+
+                 <div class="experiencePro">
+                    <div id="ligneExPro">
+                      <div id="experiences-container">
+                       <h1>Experience Professionnelle</h1>
+                          
+                        </div>
+                        <button type="button" id="add-experience" class="add-button">Ajouter Expérience</button>
+                    </div>
+                </div>
+
+<!---------------------------EDUCATION---------------------------->
+
+                <div class="education">
+                    <div id="ligneEduc">
+                        <div id="education_container">
+                            <h1>Education</h1>
+                        </div>
+                        <button type="button" id="add-formation" class="button-add">Ajouter une formation</button><br><br>
+                    </div>
+
+                </div>
+
+        </section>
+
+<!---------COMPETENCES (GENERALES + LANGAGES_CONNUS + PROJET_PERSO + CENTRE_INTERETS)----->
+
+        <section class="competenceItem" id="competence">
+
+            <div id="ligneComp">
+                <div id="competence_container">
+                    <h1>Compétences Générales</h1>
+                </div>
+                <button type="button" id="ajouter-competence">Ajouter</button>
+
+<!---------------------------------------------------------------------------------->
+
+                <div id="projetPerso_container">
+                    <h1>Projets personnels</h1>
+                </div>
+                <button type="button" id="ajouter_projet">Ajouter</button>
+
+<!---------------------------------------------------------------------------------->
+
+                <div id="langue_container">
+                    <h1>Langues</h1>
+                </div>
+                <button type="reset" id="ajouter_langue">Ajouter</button>
+
+<!---------------------------------------------------------------------------------->
+
+                <div id="interet_container">
+                    <h1>Centre d'intérêts</h1>
+                </div>
+                <button type="button" id="ajouter_interet">Ajouter</button>
+                
+                
+            </div>
+
+        </section>
+
+        
+    
+        </main>
+
+<!----------------------------------FOOTER------------------------------>
+        <footer>
+
+
+
+        </footer>
+
+
+
+    <script src="./cv.js"></script>
+    
+</body>
+</html>
